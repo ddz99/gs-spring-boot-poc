@@ -15,7 +15,7 @@ public class MicroserviceClient {
     }
 
     public String getMicroserviceData() {
-        String url = "http://localhost:7000/";  // Replace with your microservice URL
+        String url = "http://10.1.0.2:7000/";  // Replace with your microservice URL
         return restTemplate.getForObject(url, String.class);
     }
 }
